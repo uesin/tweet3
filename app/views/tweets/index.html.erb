@@ -10,6 +10,9 @@
           <li>
             <%= link_to '編集', "/tweets/#{tweet.id}/edit", method: :get %>
           </li>
+          <li>
+            <%= link_to '詳細', "/tweets/#{tweet.id}", method: :get %>
+          </li>
         </ul>
       </div>
        <%= simple_format(tweet.text) %>
